@@ -1,0 +1,126 @@
+# Sensitive Files - Credentials & Keys
+*.pem
+*.key
+*.cert
+*.p12
+*.pfx
+*.env
+*.env.*
+.env.local
+.env.*.local
+credentials.json
+secrets.json
+config.json
+secrets.yml
+secrets.yaml
+
+# SSH Keys
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+*.ssh
+
+# Personal Information
+*personal*
+*private*
+*confidential*
+*draft*
+*notes.txt
+*todo.txt
+
+# Backup Files
+*.bak
+*.backup
+*.old
+*.orig
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Operating Systems
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Editors & IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+*.tmproj
+*.code-workspace
+
+# Logs
+*.log
+logs/
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Archives & Compressed Files (potentially sensitive)
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Database Files
+*.sql
+*.sqlite
+*.db
+
+# Node modules (if you add JS build tools later)
+node_modules/
+
+# Python (if you add Python scripts later)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# Windows
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Source documents that shouldn't be published
+*.docx
+*.doc
+*.pdf
+*.txt
+!README.md
+!LICENSE
+
+# Image sources (keep only final images)
+*.psd
+*.ai
+*.sketch
+*.xcf
+
+# Video/Audio files (usually too large or source material)
+*.mp4
+*.mov
+*.avi
+*.mp3
+*.wav
