@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 200px;
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    color: #1a365d;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.subtitle {
+    color: #4a5568;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Audio Player Sticky Bar */
+.audio-container {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    padding: 15px 0;
+    margin-bottom: 25px;
+    z-index: 1000;
+}
+
+.audio-container audio {
+    width: 100%;
+    height: 50px;
+}
+
+.current-speaker {
+    color: #4a5568;
+    font-size: 0.9em;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.current-speaker .speaker-name {
+    font-weight: bold;
+    color: #2c5282;
+}
+
+/* Search and Filter */
+.controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.search-box {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.2s;
+}
+
+.search-box:focus {
+    outline: none;
+    border-color: #a0aec0;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 18px;
+    border: none;
+    background: #f7f7f7;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: all 0.2s;
+    font-weight: 500;
+}
+
+.filter-btn:hover {
+    background: #eee;
+}
+
+.filter-btn.active {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+/* Transcript */
+.transcript {
+    background: #fff;
+}
+
+.transcript-entry {
+    padding: 15px 0;
+    cursor: pointer;
+    transition: background 0.15s;
+    position: relative;
+}
+
+.transcript-entry:hover {
+    background: #fafafa;
+}
+
+.transcript-entry.playing {
+    background: #f5f5f5;
+}
+
+.transcript-entry.highlight {
+    background: #fffde7;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.speaker {
+    font-weight: 700;
+    font-size: 0.85em;
+}
+
+.speaker.Host {
+    color: #666;
+}
+
+.speaker.Jake {
+    color: #c53030;
+}
+
+.speaker.Daniel {
+    color: #276749;
+}
+
+.timestamp {
+    font-size: 0.85em;
+    color: #a0aec0;
+    font-family: 'Consolas', monospace;
+}
+
+.entry-text {
+    color: #2d3748;
+    font-size: 1em;
+}
+
+.entry-text mark {
+    background: #fef3c7;
+    padding: 1px 3px;
+    border-radius: 2px;
+}
+
+/* Loading State */
+.loading {
+    text-align: center;
+    padding: 60px 20px;
+    color: #718096;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #e2e8f0;
+    border-top-color: #4299e1;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    .filter-buttons {
+        justify-content: center;
+    }
+}
