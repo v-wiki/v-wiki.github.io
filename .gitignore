@@ -52,6 +52,7 @@ Desktop.ini
 # Editors & IDEs
 .vscode/
 .idea/
+!.idea/runConfigurations/
 *.sublime-project
 *.sublime-workspace
 .project
@@ -124,3 +125,7 @@ $RECYCLE.BIN/
 *.avi
 *.mp3
 *.wav
+
+# Allow specific content files
+!daniel-haqiqatjou-vs-jake/*.mp3
+!daniel-haqiqatjou-vs-jake/*.csv
